@@ -1,0 +1,622 @@
+.eighty {
+  margin-bottom: 250px;
+  &__installations {
+    justify-content: space-around;
+    margin-bottom: 72px;
+    align-items: flex-start;
+    &--text {
+      width: 36%;
+    }
+    &--image {
+      width: 48%;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 277px;
+        height: 14px;
+        right: -144px;
+        bottom: -14px;
+        background: #E16010;
+      }
+    }
+    &--heading {
+      margin-bottom: 108px;
+    }
+    &--info {
+      width: 55%;
+    }
+  }
+  &__paragraph {
+
+  }
+  &__exploitation {
+    justify-content: space-around;
+    align-items: flex-start;
+    &--text {
+      width: 36%;
+    }
+    &--heading {
+      margin-bottom: 18%;
+      margin-top: 50px;
+    }
+    &--image {
+      position: relative;
+      width: 48%;
+      &:after {
+        content: "";
+        position: absolute;
+        height: 14px;
+        width: 277px;
+        bottom: -7px;
+        left: -127px;
+        background: #005C93;
+      }
+    }
+    &--info {
+      text-align: right;
+      width: 55%;
+      margin-left: auto;
+    }
+  }
+  &__station {
+    padding-top: 163px;
+    position: relative;
+    margin-bottom: 105px;
+    &--text {
+      width: 43%;
+      margin-left: auto;
+    }
+    &--wrap {
+      width: 100%;
+      height: 164px;
+      background: #E16010;
+    }
+    &--image {
+      display: block;
+      margin-top: -45%;
+    }
+  }
+  &__building {
+    justify-content: space-around;
+    &--box {
+      width: 78%;
+    }
+    &--wrap {
+      position: relative;
+      margin-bottom: 38px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 475px;
+        height: 12px;
+        left: 8%;
+        bottom: -10px;
+        background: #E16010;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 122px;
+        left: -12px;
+        top: 0;
+        background: #005C93;
+      }
+    }
+    &--info {
+      position: absolute;
+      background: #005C93;
+      right: 0;
+      bottom: 13%;
+      width: 26%;
+      padding: 7px 13px;
+      box-sizing: border-box;
+    }
+    &--name {
+      font-family: "Rodchenko", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 50px;
+      line-height: 120%;
+      color: #000000;
+      margin-left: 8%;
+    }
+  }
+  &__way {
+    width: 91%;
+    position: relative;
+    margin-bottom: 102px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      left: 0;
+      width: calc(100% + 12px);
+      height: 19px;
+      background: #005C93;
+    }
+    &--info {
+      position: absolute;
+      left: 0;
+      background: #E16010;
+      padding: 10px 18px;
+      box-sizing: border-box;
+      bottom: 12%;
+      width: 26%;
+
+    }
+  }
+  &__welding {
+    position: relative;
+    margin-bottom: 79px;
+    &--text {
+      position: absolute;
+      width: 30%;
+      top: 16%;
+      left: 9%;
+      z-index: 9;
+      align-items: flex-start;
+    }
+    &--wrap {
+      position: relative;
+      margin-left: auto;
+      width: 66%;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 310px;
+        height: 25px;
+        left: -9%;
+        bottom: 35%;
+        z-index: -1;
+        background: #E16010;
+      }
+
+    }
+    &--info {
+      position: absolute;
+      right: 0;
+      bottom: 11%;
+      width: 36%;
+      padding: 10px 30px;
+      box-sizing: border-box;
+      background: #005C93;
+    }
+  }
+  &__wrap {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 131px;
+  }
+  &__brigade {
+    position: relative;
+    width: 62%;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 505px;
+      height: 16px;
+      left: 0;
+      bottom: -10px;
+      background: #E16010;
+    }
+    &--info {
+      padding: 16px 26px;
+      background: #005C93;
+      position: absolute;
+      right: -22%;
+      top: 24.8%;
+      width: 45%;
+    }
+  }
+  &__machine {
+    width: 37%;
+    &--heading {
+      width: 90%;
+      margin-bottom: 104px;
+      align-items: flex-start;
+    }
+    &--wrap {
+      position: relative;
+    }
+    &--info {
+      position: absolute;
+      padding: 8px 10px;
+      box-sizing: border-box;
+      background: #E16010;
+      right: -5%;
+      top: 77%;
+      text-align: right;
+      width: 74%;
+    }
+  }
+  &__row {
+    justify-content: space-around;
+    &--info {
+      width: 41%;
+      align-items: flex-start;
+    }
+  }
+}
+
+.eighty .eighty__paragraph {
+  padding: 30px 18px;
+}
+
+.eighty .eighty__paragraph--border {
+  border-right: 6px solid #005C93;
+}
+
+.eighty .eighty__exploitation--data {
+  margin-right: 19px;
+  text-align: right;
+}
+
+.eighty .eighty__exploitation--data:before {
+  left: auto;
+  right: -19px;
+}
+
+.eighty .eighty__data {
+  font-size: 80px;
+}
+
+.eighty .eighty__data:before {
+  display: none;
+}
+
+.eighty .eighty__way--text {
+  line-height: 120%;
+}
+
+.eighty .eighty__machine--text {
+  padding-bottom: 20px;
+}
+
+.eighty .eighty__row--text {
+  margin-right: 19px;
+  box-sizing: border-box;
+  padding: 10px 7% 20px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .eighty__installations--heading {
+    margin-bottom: 5%;
+  }
+
+  .eighty__installations--info {
+    width: 77%;
+  }
+
+  .eighty__exploitation--heading {
+    margin-bottom: 5%;
+    margin-top: 0;
+  }
+
+  .eighty__exploitation--info {
+    width: 75%;
+  }
+
+  .eighty__station {
+    padding-top: 90px;
+  }
+
+  .eighty__building--info {
+    width: 33%;
+  }
+
+  .eighty__building--box {
+    width: 85%;
+  }
+
+  .eighty__building--name {
+    margin-left: 0;
+  }
+
+  .eighty__way--info {
+    width: 32%;
+  }
+
+  .eighty__welding--text {
+    width: 36%;
+    left: 2%;
+  }
+
+  .eighty__welding--info {
+    width: 52%;
+  }
+
+  .eighty__machine--heading {
+    width: 100%;
+    margin-bottom: 71px;
+  }
+
+  .eighty__brigade--info {
+    right: -14%;
+    top: 23.8%;
+    width: 49%;
+  }
+
+  .eighty__machine--info {
+    width: 83%;
+  }
+
+  .eighty__wrap {
+    margin-bottom: 85px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .eighty__installations--image:after {
+    display: none;
+  }
+
+  .eighty__installations--info {
+    width: 100%;
+  }
+
+  .eighty__exploitation--info {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+
+  .eighty__exploitation--image:after {
+    display: none;
+  }
+
+  .eighty__station {
+    padding-top: 35px;
+  }
+
+  .eighty__building--box {
+    width: 79%;
+  }
+
+  .eighty__way--info {
+    width: 41%;
+  }
+
+  .eighty__welding--text {
+    width: 40%;
+    left: 0;
+  }
+
+  .eighty__welding--info {
+    width: 67%;
+  }
+
+  .eighty__brigade--info {
+    right: 0;
+    top: 10.8%;
+    width: 63%;
+  }
+
+  .eighty__machine--heading {
+    margin-bottom: 40px;
+  }
+
+  .eighty__machine--info {
+    width: 100%;
+    right: 0;
+    padding: 8px;
+  }
+
+  .eighty__row--info {
+    width: 47%;
+  }
+
+  .eighty__building--info {
+    width: 42%;
+    bottom: 6%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .eighty .eighty__installations {
+    flex-direction: column;
+  }
+
+  .eighty__installations--text {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    width: 80%;
+  }
+
+  .eighty__installations--image {
+    width: 100%;
+  }
+
+  .eighty__installations--info {
+    margin-bottom: 25px;
+  }
+
+  .eighty__installations--heading {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    margin-bottom: 0;
+  }
+
+  .eighty .eighty__exploitation {
+    flex-direction: column;
+  }
+
+  .eighty__exploitation--text {
+    width: 80%;
+  }
+
+  .eighty__exploitation--heading {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .eighty .eighty__paragraph--border {
+    border-left: 6px solid #005C93;
+    border-right: none;
+  }
+
+  .eighty .eighty__exploitation--data {
+    margin-left: 19px;
+    text-align: left;
+  }
+
+  .eighty .eighty__exploitation--data:before {
+    right: auto;
+    left: -19px;
+  }
+
+  .eighty__exploitation--image {
+    width: 100%;
+  }
+
+  .eighty .eighty__building {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .eighty__building--box {
+    width: 100%;
+  }
+
+  .eighty__building--wrap:before {
+    display: none;
+
+  }
+
+  .eighty__way {
+    width: 100%;
+    margin-bottom: 75px;
+  }
+
+  .eighty .eighty__welding {
+    flex-direction: column;
+    flex-flow: column-reverse;
+  }
+
+  .eighty .eighty__welding--text {
+    width: 80%;
+    position: static;
+    flex-direction: column;
+  }
+
+  .eighty__welding--wrap {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .eighty__welding--wrap:before {
+    display: none;
+  }
+
+  .eighty .eighty__wrap {
+    flex-direction: column;
+  }
+
+  .eighty__brigade:after {
+    display: none;
+  }
+
+  .eighty__brigade {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .eighty__machine {
+    width: 100%;
+  }
+
+  .eighty .eighty__machine--heading {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .eighty__machine--info {
+    top: 0;
+  }
+
+  .eighty .eighty__row {
+    flex-direction: column;
+  }
+
+  .eighty .eighty__row--info {
+    width: 80%;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    margin-bottom: 40px;
+  }
+
+  .eighty__building--wrap:after {
+    display: none;
+  }
+
+  .eighty__station {
+    margin-bottom: 65px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .eighty {
+    margin-bottom: 80px;
+    padding: 0 5px;
+  }
+
+  .eighty__installations--text {
+    width: 97%;
+  }
+  .eighty__station--text {
+    margin-bottom: 5px;
+  }
+  .eighty__exploitation--text {
+    width: 97%;
+  }
+
+  .eighty__building--info {
+    width: 100%;
+    position: static;
+  }
+
+  .eighty__way--info {
+    width: 100%;
+    position: static;
+    padding: 10px 15px;
+  }
+
+  .eighty__way:after {
+    display: none;
+  }
+
+  .eighty__welding--info {
+    width: 100%;
+    position: static;
+    padding: 5px;
+  }
+
+  .eighty .eighty__welding--text {
+    width: 97%;
+  }
+
+  .eighty__brigade--info {
+    width: 100%;
+    position: static;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .eighty .eighty__machine--heading {
+    width: 97%;
+  }
+
+  .eighty .eighty__row--info {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .eighty__station--text {
+    width: 100%;
+  }
+}

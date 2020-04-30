@@ -1,0 +1,326 @@
+.interactive {
+  background: #E5E5E5;
+  padding: 10%;
+  position: relative;
+
+  &__question {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    color: #22215B;
+    margin-bottom: 28px;
+  }
+  &__result {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 37px;
+    color: #22215B;
+    margin-bottom: 28px;
+  }
+  &__name {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 37px;
+    color: #22215B;
+    text-transform: uppercase;
+    display: block;
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    &--hidden {
+      display: none;
+    }
+
+  }
+  &__image {
+    position: relative;
+    margin-bottom: 103px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 93px;
+      height: 14px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      background: #E16010;
+    }
+
+  }
+  &__wrap {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 99;
+    bottom: -60%;
+    padding: 6%;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 16px #BECDE2;
+    border-radius: 60px;
+    &--box {
+      position: relative;
+    }
+  }
+  &__row {
+    justify-content: space-between;
+    &--inner {
+      margin-bottom: 40px;
+    }
+  }
+  &__button {
+    width: 47%;
+    position: relative;
+    background: #EEF7FE;
+    border-radius: 10px;
+    border: none;
+    text-align: left;
+    padding: 14px;
+    box-sizing: border-box;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #A5A5A5;
+    align-items: center;
+
+    &--circle {
+      width: 42px;
+      height: 42px;
+      margin-right: 14px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      display: block;
+    }
+    &--name {
+      width: 80%;
+      display: block;
+    }
+    &--check {
+      &:before {
+        content: "";
+        position: absolute;
+        background: url("../../img/test/arrow.svg") no-repeat;
+        width: 13px;
+        height: 100%;
+        z-index: 9;
+        background-position: center;
+        left: 30px;
+        top: 0;
+      }
+    }
+    &--wron {
+      &:before {
+        content: "";
+        position: absolute;
+        background: url("../../img/test/close.svg") no-repeat;
+        width: 16px;
+        height: 100%;
+        z-index: 9;
+        background-position: center;
+        left: 27px;
+        top: 0;
+      }
+    }
+    &--true {
+      background: #94FFA5;
+      color: #22215B;
+    }
+    &--false {
+      background: #FF9494;
+      color: #22215B;
+    }
+  }
+  &__number {
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #22215B;
+    position: absolute;
+    bottom: -28px;
+    width: 100%;
+    display: block;
+    text-align: center;
+
+  }
+  &__descriptions {
+    background: #FFFFFF;
+    border-radius: 60px;
+    padding: 193px 79px 13px;
+    box-sizing: border-box;
+    width: 86%;
+    margin: 0 auto;
+    &:after {
+      content: "";
+      background: #005C93;
+      position: absolute;
+      bottom: -4px;
+      width: 93px;
+      height: 9px;
+      margin: auto;
+      left: 0;
+      right: 0;
+    }
+  }
+  &__explanations {
+    text-align: center;
+    font-family: "Avenir Next Cyr", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #E5E5E5;
+    margin: 0 auto;
+  }
+  &__info {
+    display: none;
+    &--item {
+      font-family: "Avenir Next Cyr", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000000;
+      margin-bottom: 35px;
+      text-align: left;
+      display: none;
+    }
+    &--open {
+      display: block;
+    }
+
+    &--color {
+      color: #22215B;
+      font-weight: bold;
+    }
+  }
+  &__farther {
+    font-family: "Avenir Next Cyr", sans-serif;
+    background: #005C93;
+    border-radius: 10px;
+    display: block;
+    padding: 22px;
+    box-sizing: border-box;
+    width: 267px;
+    margin: 0 auto 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+.interactive .interactive__picture--changed {
+  display: none;
+}
+
+.interactive .interactive__picture--hidden {
+  display: none;
+}
+
+.interactive .interactive__picture--visible {
+  display: block;
+}
+
+.overlay {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(black, 0.75);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s ease-in-out;
+  max-height: 100vh;
+  overflow-y: auto;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  text-align: center;
+  padding: 3%;
+  opacity: 0;
+  transition: 0.35s ease-in-out;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.open {
+  opacity: 1;
+  pointer-events: inherit;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .interactive__question {
+    width: 90%;
+    margin: 0 auto 28px;
+  }
+
+  .modal {
+    padding: 5% 3%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .interactive__wrap {
+    position: static;
+  }
+
+  .interactive .interactive__row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .interactive__button {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .interactive__image {
+    margin-bottom: 0;
+  }
+
+  .interactive__descriptions {
+    padding: 40px 25px 13px;
+    width: 100%;
+
+  }
+
+  .interactive__number {
+    bottom: -11px;
+  }
+
+  .interactive__question {
+    font-size: 20px;
+  }
+
+  .interactive__farther {
+    width: 225px;
+  }
+}
