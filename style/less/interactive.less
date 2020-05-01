@@ -13,23 +13,26 @@
     margin-bottom: 28px;
   }
   &__result {
-    font-family: "Avenir Next Cyr", sans-serif;
+    font-family: "Rodchenko",sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 37px;
-    color: #22215B;
-    margin-bottom: 28px;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 64px;
+    color: #E16010;
+    margin-bottom: 55px;
+    text-align: center;
   }
   &__name {
-    font-family: "Avenir Next Cyr", sans-serif;
+    font-family: "Rodchenko",sans-serif;
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 37px;
-    color: #22215B;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 81px;
     text-transform: uppercase;
+    color: #005C93;
+    margin-bottom: 40px;
     display: block;
+    text-align: center;
   }
   &__item {
     position: relative;
@@ -43,7 +46,8 @@
   }
   &__image {
     position: relative;
-    margin-bottom: 103px;
+    width: 90%;
+    margin: 0 auto 80px;
     &:before {
       content: "";
       position: absolute;
@@ -62,7 +66,7 @@
     width: 100%;
     left: 0;
     z-index: 99;
-    bottom: -60%;
+    bottom: -50%;
     padding: 6%;
     box-sizing: border-box;
     background: #FFFFFF;
@@ -159,7 +163,7 @@
   &__descriptions {
     background: #FFFFFF;
     border-radius: 60px;
-    padding: 193px 79px 13px;
+    padding: 148px 60px 13px;
     box-sizing: border-box;
     width: 86%;
     margin: 0 auto;
@@ -175,6 +179,23 @@
       right: 0;
     }
   }
+  &__depiction{
+    font-family: "Avenir Regular",sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 120px;
+  }
+  &__social{
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #CBCBCB;
+  }
   &__info {
     display: none;
     &--item {
@@ -186,7 +207,13 @@
       color: #000000;
       margin-bottom: 35px;
       text-align: left;
+      background: #FFFFFF;
+      border-radius: 60px;
       display: none;
+    }
+    &--image{
+      display: block;
+      margin: -18px auto 0;
     }
     &--open {
       display: block;
@@ -238,7 +265,6 @@
   pointer-events: none;
   transition: 0.35s ease-in-out;
   max-height: 100vh;
-  overflow-y: auto;
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -248,7 +274,7 @@
 
 .modal {
   text-align: center;
-  padding: 2%;
+  padding: 1% 2%;
   opacity: 0;
   transition: 0.35s ease-in-out;
   overflow-y: auto;

@@ -79,10 +79,7 @@ $(document).ready(function () {
     setTimeout(function () {
         $("#preloader").addClass('preload__animate');
         setTimeout(function () {
-
             $("#preloader").addClass('preload__hidden');
-            $(".container-fluid").addClass('preload__hidden');
-
         }, 1000);
     }, 3000);
     $('.header__film--fragment').each(function () {

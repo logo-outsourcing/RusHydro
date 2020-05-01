@@ -39,7 +39,8 @@
 body {
   overflow-x: hidden;
 }
-.scroll{
+
+.scroll {
   overflow-y: hidden;
 }
 
@@ -127,7 +128,6 @@ body {
   box-sizing: border-box;
 }
 
-
 .preload {
   position: fixed;
   background: white;
@@ -135,12 +135,11 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 99;
+  z-index: 9999;
   height: 100vh;
   width: 100%;
   transition: opacity 1s;
   opacity: 1;
-
 
   &__animate {
     opacity: 0;
@@ -312,7 +311,7 @@ body {
       transform: translateX(0);
 
     }
-    &--inner{
+    &--inner {
       width: 100%;
     }
     &--small {
@@ -364,12 +363,12 @@ body {
       right: 12%;
       z-index: 9999;
       display: block;
-      & svg{
+      & svg {
         stroke: #F08300;
         fill: #FFFFFF;
       }
-      &:hover{
-        & svg{
+      &:hover {
+        & svg {
           stroke: #FFFFFF;
           fill: #F08300;
         }
@@ -460,7 +459,7 @@ body {
         left: 0;
       }
     }
-    &--icon{
+    &--icon {
       position: relative;
       &:before {
         content: "";
@@ -657,7 +656,7 @@ body {
     font-size: 60px;
     line-height: 75px;
     text-transform: uppercase;
-    color:  #F08300;
+    color: #F08300;
     display: none;
     margin-left: 25px;
     position: relative;
@@ -983,7 +982,7 @@ body {
     display: inline-block;
     margin-bottom: 85px;
     margin-left: 35px;
-
+    width: 54%;
   }
   &__title {
     font-family: "Rodchenko", sans-serif;
@@ -1042,37 +1041,17 @@ body {
 //finish footer
 
 ///Media
-//@media screen  and (min-width: 2500px) {
-//  .header:after {
-//    bottom: -366px;
-//  }
-//
-//  .header__film {
-//    transform: translateX(-210%);
-//  }
-//
-//  .header__film--visible {
-//    transform: translateX(0);
-//  }
-//
-//  .header__background:before {
-//    left: -50%;
-//    width: 50%;
-//  }
-//
-//  .header__block:after {
-//    height: 645px;
-//  }
-//}
 
 @media screen and (max-width: 1400px) {
   .test__gif {
     right: -59px;
   }
+
   .header__poster {
     right: -7%;
   }
-  .preload video{
+
+  .preload video {
     width: 100%;
     height: 100vh;
   }
@@ -1147,10 +1126,12 @@ body {
   .header__block:after {
     height: 521px;
   }
+
   .header__iframe {
     width: 80%;
     height: 34%;
   }
+
   .header__film--close {
     top: 34%;
   }
@@ -1200,7 +1181,6 @@ body {
     right: -35px;
   }
 
-
   .header__video--mobile {
     display: block;
     margin-bottom: 50px;
@@ -1229,7 +1209,8 @@ body {
   .header__background:after {
     display: none;
   }
-  .preload{
+
+  .preload {
     display: none;
   }
 
@@ -1242,7 +1223,7 @@ body {
       right: 25%;
       width: 168px;
       height: 8px;
-      background:  #F08300;
+      background: #F08300;
       margin: auto;
     }
     &:before {
@@ -1258,6 +1239,7 @@ body {
       margin: auto;
     }
   }
+
   .header__play {
     display: block;
   }
@@ -1359,6 +1341,7 @@ body {
 
   .now__wrap {
     padding: 18px;
+    width: 45%;
   }
 
   .now__gallery:after,
@@ -1465,6 +1448,7 @@ body {
   .main__info {
     margin-bottom: 31px;
   }
+
   .header__iframe {
     height: 43%;
   }
@@ -1474,7 +1458,6 @@ body {
   .content-container {
     width: 100%;
   }
-
 
   .header__heading {
     display: flex;
@@ -1488,8 +1471,6 @@ body {
       display: none;
     }
   }
-
-
 
   .header__menu {
     display: none;
@@ -1616,9 +1597,13 @@ body {
   .main__footer--name {
     margin: 0 auto;
   }
+
   .header__iframe {
     width: 80%;
     height: 35%;
+  }
+  .now__wrap {
+    width: 80%;
   }
 }
 

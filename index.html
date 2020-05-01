@@ -78,7 +78,7 @@
         <div class="header__wrapper content-row">
             <a href="#" class="header__film ">
                 <div class="header__film--box">
-                    <video class="header__film--fragment" autoplay="autoplay" loop="loop" playsinline
+                    <video class="header__film--fragment" muted autoplay="autoplay" loop="loop" playsinline
                            preload="auto"
                            poster="img/home/video.jpg" src="">
                     </video>
@@ -92,11 +92,13 @@
                 <div class="header__film--wrap">
 
                 </div>
-                <a href="#" class="header__film--close"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="16" cy="16" r="15.5" />
-                    <path d="M8 8L16 16L24 24" />
-                    <path d="M8 24L16 16L24 8" />
-                </svg></a>
+                <a href="#" class="header__film--close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="15.5"/>
+                        <path d="M8 8L16 16L24 24"/>
+                        <path d="M8 24L16 16L24 8"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -121,9 +123,9 @@
                     </div>
                     <a href="#" class="header__film--close">
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="16" cy="16" r="15.5" />
-                            <path d="M8 8L16 16L24 24" />
-                            <path d="M8 24L16 16L24 8" />
+                            <circle cx="16" cy="16" r="15.5"/>
+                            <path d="M8 8L16 16L24 24"/>
+                            <path d="M8 24L16 16L24 8"/>
                         </svg>
                     </a>
                 </div>
@@ -1172,36 +1174,66 @@
                     </div>
                 </div>
                 <div class="interactive__item interactive__item--hidden" id="question_13">
-                    <p class="interactive__result">Вы набрали <span class="interactive__result--number"></span> баллов
-                    </p>
-                    <ul>
-                        <li class="interactive__info--item" id="result-1">
-                            <span class="interactive__info--color">1-3 балла</span>
-                            <span class="interactive__name">НЕОСВЕДОМЛЕННЫЙ </span>
-                            Вы не очень-то хорошо разбираетесь в истории отечественной энергетики. А зря! Она хранит в
-                            себе немало интересного. Внимательно ознакомьтесь с содержимым сайта и пройдите тест ещё
-                            раз!
-                        </li>
-                        <li class="interactive__info--item" id="result-2">
-                            <span class="interactive__info--color">4-6 баллов</span>
-                            <span class="interactive__name">НАЧИНАЮЩИЙ ЭНЕРГЕТИК</span>
-                            История российской энергетики хранит в себе немало интересного. Не лишайте себя удовольствия
-                            узнать больше! Подтянуть знания и окунуться в хроники из жизни отечественной энергетики
-                            поможет этот сайт.l
-                        </li>
-                        <li class="interactive__info--item" id="result-3">
-                            <span class="interactive__info--color">7-9 баллов</span>
-                            <span class="interactive__name">УВЕРЕННЫЙ </span>
-                            Вы прекрасно разбираетесь в истории отечественной энергетики, но нет предела совершенству!
-                            Изучите наш сайт и вы найдете там еще больше интересной информации.
-                        </li>
-                        <li class="interactive__info--item" id="result-4">
-                            <span class="interactive__info--color">10-12 баллов</span>
-                            <span class="interactive__name">НАСТОЯЩИЙ ЗНАТОК</span>
-                            Блестящий результат! Такое ощущение, что у истоков энергетики в России стояли именно вы!
-                            Кржижановский бы вами гордился!
-                        </li>
-                    </ul>
+                    <div class="interactive__info--item" id="result-1">
+                        <img src="img/test/result1.png" alt=""  class="interactive__info--image">
+                        <span class="interactive__name">В начале пути </span>
+                        <p class="interactive__result">Вы набрали <span class="interactive__result--number"></span> баллов
+                        </p>
+                        <p class="interactive__depiction">Вы не очень-то хорошо разбираетесь в истории отечественной энергетики. А зря! Она хранит в себе немало интересного. Внимательно ознакомьтесь с содержимым сайта
+                            и пройдите тест ещё раз!
+
+                        </p>
+                        <div class="interactive__social">
+                            <a href="#">
+                                <img src="img/test/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#"><img src="img/test/vkontakte.png" alt="vkontakte"></a>
+                            <a href="#"><img src="img/test/facebook.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                    <div class="interactive__info--item" id="result-2">
+                        <img src="img/test/result2.png" alt="" class="interactive__info--image">
+                        <span class="interactive__name">начинающий энергетик</span>
+                        <p class="interactive__result">Вы набрали <span class="interactive__result--number"></span> баллов
+                        </p>
+                        <p class="interactive__depiction">История российской энергетики хранит в себе немало интересного. Не лишайте себя удовольствия узнать больше! Подтянуть знания
+                            и окунуться в хроники из жизни отечественной энергетики поможет этот сайт.</p>
+                        <div class="interactive__social">
+                            <a href="#">
+                                <img src="img/test/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#"><img src="img/test/vkontakte.png" alt="vkontakte"></a>
+                            <a href="#"><img src="img/test/facebook.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                    <div class="interactive__info--item" id="result-3">
+                        <img src="img/test/result1.png" alt=""  class="interactive__info--image">
+                        <span class="interactive__name">УВЕРЕННЫЙ</span>
+                        <p class="interactive__result">Вы набрали <span class="interactive__result--number"></span> баллов
+                        </p>
+                        <p class="interactive__depiction">Вы прекрасно разбираетесь в истории отечественной энергетики, но нет предела совершенству! Изучите наш сайт и вы найдете там еще больше интересной информации.</p>
+                        <div class="interactive__social">
+                            <a href="#">
+                                <img src="img/test/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#"><img src="img/test/vkontakte.png" alt="vkontakte"></a>
+                            <a href="#"><img src="img/test/facebook.png" alt="facebook"></a>
+                        </div>
+                    </div>
+                    <div class="interactive__info--item" id="result-4">
+                        <img src="img/test/result1.png" alt=""  class="interactive__info--image">
+                        <span class="interactive__name">НАСТОЯЩИЙ ЗНАТОК</span>
+                        <p class="interactive__result">Вы набрали <span class="interactive__result--number"></span> баллов
+                        </p>
+                        <p class="interactive__depiction">Блестящий результат! Такое ощущение, что у истоков энергетики в России стояли именно вы! Кржижановский бы вами гордился! </p>
+                        <div class="interactive__social">
+                            <a href="#">
+                                <img src="img/test/twitter.png" alt="twitter">
+                            </a>
+                            <a href="#"><img src="img/test/vkontakte.png" alt="vkontakte"></a>
+                            <a href="#"><img src="img/test/facebook.png" alt="facebook"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <a class='btn close-modal' data-modal="#modal" href="#"><img src="img/test/button.svg" alt="close"></a>
@@ -1212,7 +1244,7 @@
 <section class="now " id="photo">
     <div class="content-container now__wrapper ">
         <div class="now__wrap wow fadeInLeft">
-            <h2 class="now__title">РУСГИДРО СЕЙЧАС</h2>
+            <h2 class="now__title">#историяэнергетики вместе с РусГидро</h2>
         </div>
         <div class="content-row now__gallery">
             <a id="single_image1" href="img/home/now1.png" data-fancybox="gallery"
