@@ -39,6 +39,9 @@
 body {
   overflow-x: hidden;
 }
+.scroll{
+  overflow-y: hidden;
+}
 
 .content-container {
   max-width: 1110px;
@@ -127,6 +130,7 @@ body {
 
 .preload {
   position: fixed;
+  background: white;
   left: 0;
   top: 0;
   right: 0;
@@ -314,7 +318,8 @@ body {
     &--small {
       display: none;
       width: 0;
-      position: absolute;
+      position: fixed;
+      background: white;
       transition: width 0.3s linear;
       top: -1px;
       left: 0;
@@ -332,12 +337,14 @@ body {
     }
     &--open {
       width: 0;
-      position: absolute;
+      position: fixed;
+      background: white;
       transition: width 0.3s linear;
       top: 0;
       left: 0;
       display: none;
       z-index: 99;
+
     }
     &--play {
       display: block;
@@ -347,18 +354,31 @@ body {
     &--wrap {
       width: 100%;
       height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     &--close {
       position: absolute;
-      top: 2%;
-      right: 2%;
+      top: 12%;
+      right: 12%;
       z-index: 9999;
       display: block;
+      & svg{
+        stroke: #F08300;
+        fill: #FFFFFF;
+      }
+      &:hover{
+        & svg{
+          stroke: #FFFFFF;
+          fill: #F08300;
+        }
+      }
     }
   }
   &__iframe {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 80%;
   }
   &__info {
     display: flex;
@@ -1127,6 +1147,10 @@ body {
   .header__block:after {
     height: 521px;
   }
+  .header__iframe {
+    width: 80%;
+    height: 34%;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -1438,6 +1462,9 @@ body {
   .main__info {
     margin-bottom: 31px;
   }
+  .header__iframe {
+    height: 43%;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1585,6 +1612,10 @@ body {
 
   .main__footer--name {
     margin: 0 auto;
+  }
+  .header__iframe {
+    width: 80%;
+    height: 35%;
   }
 }
 

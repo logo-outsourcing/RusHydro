@@ -75,15 +75,6 @@ function getResults() {
 
 $(document).ready(function () {
 
-    // setTimeout(function () {
-    //     $('.container-fluid').addClass('loaded');
-    // }, 1000);
-    // setTimeout(function () {
-    //     $('.circle').hide();
-    // }, 1000);
-    // setTimeout(function () {
-    //     $("#preloader").removeClass('preload__animate');
-    // }, 2000);
 
     setTimeout(function () {
         $("#preloader").addClass('preload__animate');
@@ -97,25 +88,24 @@ $(document).ready(function () {
     $('.header__film--fragment').each(function () {
         setTimeout(function () {
             document.querySelector(".header__film--fragment").setAttribute("src", "https://logo-outsourcing.github.io/Hydro/video/saver.mp4");
+            $('body').removeClass('scroll');
         }, 2900);
+
     });
 
     //header video
-    // setTimeout(function () {
-    //     $('.header__film').addClass('header__film--visible');
-    //     $('.header__video').addClass('header__video--small');
-    //     $('.header').addClass('header__block');
-    // }, 5000);
+
     $('.header__film').click(function () {
         $('.header__film--open').addClass('header__film--play');
-        var film = " <iframe class=\"header__iframe\"  src=\"https://www.youtube.com/embed/hEOD_4Cf1ao?controls=0&autoplay=1\"\n" +
+        var film = " <iframe class=\"header__iframe\"  src=\"https://www.youtube.com/embed/hEOD_4Cf1ao?controls=0\"\n" +
             "                        frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n" +
             "                        allowfullscreen></iframe>";
         $('.header__film--wrap').html(film);
+        $('body').addClass('scroll');
     });
     $('.header__film--mobile').click(function () {
         $('.header__film--small').addClass('header__film--play');
-        var film = " <iframe class=\"header__iframe\"  src=\"https://www.youtube.com/embed/hEOD_4Cf1ao?controls=0&autoplay=1\"\n" +
+        var film = " <iframe class=\"header__iframe\"  src=\"https://www.youtube.com/embed/hEOD_4Cf1ao?controls=0\"\n" +
             "                        frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n" +
             "                        allowfullscreen></iframe>";
         $('.header__film--wrap').html(film);
@@ -125,6 +115,7 @@ $(document).ready(function () {
         $('.header__film--wrap').html("");
         $('.header__film--open').removeClass('header__film--play');
         $('.header__film--small').removeClass('header__film--play');
+        $('body').removeClass('scroll');
     });
     var bLazy = new Blazy();
 
