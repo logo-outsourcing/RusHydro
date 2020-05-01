@@ -16,21 +16,21 @@
     font-family: "Rodchenko", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 80px;
-    line-height: 64px;
+    font-size: 40px;
+    line-height: 50px;
     color: #E16010;
-    margin-bottom: 55px;
+    margin-bottom: 26px;
     text-align: center;
   }
   &__name {
     font-family: "Rodchenko", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 100px;
-    line-height: 81px;
+    font-size: 50px;
+    line-height: 40px;
     text-transform: uppercase;
     color: #005C93;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
     display: block;
     text-align: center;
   }
@@ -181,18 +181,19 @@
   }
   &__box {
     position: relative;
-    margin-top: 14%;
-    padding-top: 48%;
+    padding-top: 43%;
+    width: 61%;
+    margin:  14% auto 0;
   }
   &__depiction {
     font-family: "Avenir Regular", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
+    font-size: 20px;
+    line-height: 23px;
     text-align: center;
     color: #000000;
-    margin-bottom: 120px;
+    margin-bottom: 85px;
   }
   &__social {
     align-items: center;
@@ -322,6 +323,9 @@
     top: -20px;
     right: -88%;
   }
+  .interactive__info--image {
+    width: 72%;
+  }
 }
 @media screen and (max-width: 990px) {
   .interactive__question {
@@ -335,11 +339,17 @@
   .interactive__info--image {
     width: 53%;
   }
+  .interactive__box {
+    width: 67%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .interactive__wrap {
     position: static;
+  }
+  .interactive__box {
+    width: 90%;
   }
   .interactive__social--link:not(:last-child):before {
     right: -50%;
