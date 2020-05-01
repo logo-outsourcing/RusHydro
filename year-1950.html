@@ -73,12 +73,15 @@
         <div class="header__wrapper content-row">
             <a href="#" class="header__film ">
                 <div class="header__film--box">
-                    <img src="img/home/video.jpg" alt="video" class="content-image">
+                    <video class="header__film--inner" autoplay="autoplay" muted loop="loop" playsinline
+                           preload="auto"
+                           poster="img/home/video.jpg" src="https://logo-outsourcing.github.io/Hydro/video/saver.mp4">
+                    </video>
+
                     <div class="header__info">
                         <img src="img/home/play.png" alt="Play" class="header__play">
-                        <span class="header__subtitle">ВИДЕО</span>
-                        <p class="header__name"> Фильм: Федр Яковлев, 2013</p>
                     </div>
+                    <img src="img/home/poster5.png" class="header__poster">
                 </div>
             </a>
             <div class="header__film--open">
@@ -87,9 +90,9 @@
                 </div>
                 <a href="#" class="header__film--close"><img src="img/test/close-film.svg" alt="close"></a>
             </div>
-            <video autoplay="autoplay" muted loop="loop" playsinline preload="auto" poster="img/home/poster2.png"
-                   class="header__video" src="https://logo-outsourcing.github.io/Hydro/video/video3.mp4">
-            </video>
+            <!--<video autoplay="autoplay" muted loop="loop" playsinline preload="auto" poster="img/home/poster2.png"-->
+                   <!--class="header__video" src="https://logo-outsourcing.github.io/Hydro/video/video3.mp4">-->
+            <!--</video>-->
         </div>
     </div>
     <div class="header__element">
@@ -105,8 +108,6 @@
                     <img src="img/home/video.jpg" alt="video" class="header__image">
                     <div class="header__info">
                         <img src="img/home/play.png" alt="Play" class="header__play">
-                        <span class="header__subtitle">ВИДЕО</span>
-                        <p class="header__name"> Фильм: Федр Яковлев, 2013</p>
                     </div>
 
                 </a>
@@ -214,7 +215,7 @@
                 Райчихинская ГРЭС</p>
         </div>
     </div>
-    <div class="content-container">
+
         <div class="content-row fifty__inner ">
             <div class="fifty__master wow fadeInLeft">
                 <a id="single_image12" href="img/fifty/master.png" class="zoom fifty__master--image">
@@ -235,6 +236,7 @@
                     435 МВт</p>
             </div>
         </div>
+    <div class="content-container">
         <div class="content-row fifty__bridge">
             <p class="content-text-next fifty__bridge--info wow fadeInLeft">В Самарской области введена в эксплуатацию
                 Жигулевская ГЭС мощностью 2 488 МВт,

@@ -627,31 +627,11 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
   }
   &__play {
     display: none;
-  }
-  &__subtitle {
-    font-family: "Avenir Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 94px;
-    color: #FFFFFF;
-    margin-bottom: 34%;
-  }
-  &__name {
-    font-family: "Avenir Regular", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    margin: 0 15px 13px auto;
   }
   &__wrap {
     transition: top 0.3s linear;
@@ -1439,9 +1419,6 @@ h4 {
     right: -35px;
   }
 
-  .header__subtitle {
-    margin-bottom: 11%;
-  }
 
   .header__video--mobile {
     display: block;
@@ -1473,6 +1450,35 @@ h4 {
   }
   .preload{
     display: none;
+  }
+
+  .header__film--mobile {
+    &:after {
+      content: "";
+      position: absolute;
+      top: -19px;
+      left: 25%;
+      right: 25%;
+      width: 168px;
+      height: 8px;
+      background:  #F08300;
+      margin: auto;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -19px;
+      left: 25%;
+      right: 25%;
+      width: 168px;
+      height: 8px;
+      background: #005C93;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      margin: auto;
+    }
+  }
+  .header__play {
+    display: block;
   }
 }
 
@@ -1685,31 +1691,6 @@ h4 {
     width: 100%;
   }
 
-  .header__film--mobile {
-    &:after {
-      content: "";
-      position: absolute;
-      top: -19px;
-      left: 25%;
-      right: 25%;
-      width: 168px;
-      height: 8px;
-      background:  #F08300;
-      margin: auto;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      bottom: -19px;
-      left: 25%;
-      right: 25%;
-      width: 168px;
-      height: 8px;
-      background: #005C93;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-      margin: auto;
-    }
-  }
 
   .header__heading {
     display: flex;
@@ -1724,12 +1705,8 @@ h4 {
     }
   }
 
-  .header__play {
-    display: block;
-  }
 
-  .header__subtitle,
-  .header__name,
+
   .header__menu {
     display: none;
   }
