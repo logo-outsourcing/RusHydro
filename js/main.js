@@ -84,6 +84,7 @@ $(document).ready(function () {
     // setTimeout(function () {
     //     $("#preloader").removeClass('preload__animate');
     // }, 2000);
+
     setTimeout(function () {
         $("#preloader").addClass('preload__animate');
         setTimeout(function () {
@@ -93,9 +94,11 @@ $(document).ready(function () {
 
         }, 1000);
     }, 3000);
-    setTimeout(function () {
-        document.querySelector(".header__film--fragment").setAttribute("src", "https://logo-outsourcing.github.io/Hydro/video/saver.mp4");
-    }, 2900);
+    $('.header__film--fragment').each(function () {
+        setTimeout(function () {
+            document.querySelector(".header__film--fragment").setAttribute("src", "https://logo-outsourcing.github.io/Hydro/video/saver.mp4");
+        }, 2900);
+    });
 
     //header video
     // setTimeout(function () {

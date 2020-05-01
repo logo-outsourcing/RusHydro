@@ -350,8 +350,13 @@ h4 {
   bottom: 0;
   z-index: 99;
   height: 100vh;
+  width: 100%;
   transition: opacity 1s;
   opacity: 1;
+  & video{
+    width: 100%;
+    height: 100vh;
+  }
 
   &__animate {
     opacity: 0;
@@ -564,6 +569,9 @@ h4 {
     &--visible {
       transform: translateX(0);
 
+    }
+    &--inner{
+      width: 100%;
     }
     &--small {
       display: none;
@@ -1283,28 +1291,28 @@ h4 {
 //finish footer
 
 ///Media
-@media screen  and (min-width: 2500px) {
-  .header:after {
-    bottom: -366px;
-  }
-
-  .header__film {
-    transform: translateX(-210%);
-  }
-
-  .header__film--visible {
-    transform: translateX(0);
-  }
-
-  .header__background:before {
-    left: -50%;
-    width: 50%;
-  }
-
-  .header__block:after {
-    height: 645px;
-  }
-}
+//@media screen  and (min-width: 2500px) {
+//  .header:after {
+//    bottom: -366px;
+//  }
+//
+//  .header__film {
+//    transform: translateX(-210%);
+//  }
+//
+//  .header__film--visible {
+//    transform: translateX(0);
+//  }
+//
+//  .header__background:before {
+//    left: -50%;
+//    width: 50%;
+//  }
+//
+//  .header__block:after {
+//    height: 645px;
+//  }
+//}
 
 @media screen and (max-width: 1400px) {
   .test__gif {
@@ -1457,6 +1465,9 @@ h4 {
 
   .header__background:before,
   .header__background:after {
+    display: none;
+  }
+  .preload{
     display: none;
   }
 }
