@@ -13,7 +13,7 @@
     margin-bottom: 28px;
   }
   &__result {
-    font-family: "Rodchenko",sans-serif;
+    font-family: "Rodchenko", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 80px;
@@ -23,7 +23,7 @@
     text-align: center;
   }
   &__name {
-    font-family: "Rodchenko",sans-serif;
+    font-family: "Rodchenko", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 100px;
@@ -179,8 +179,13 @@
       right: 0;
     }
   }
-  &__depiction{
-    font-family: "Avenir Regular",sans-serif;
+  &__box {
+    position: relative;
+    margin-top: 14%;
+    padding-top: 48%;
+  }
+  &__depiction {
+    font-family: "Avenir Regular", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -189,12 +194,28 @@
     color: #000000;
     margin-bottom: 120px;
   }
-  &__social{
+  &__social {
     align-items: center;
     justify-content: space-between;
     width: 80%;
     margin: 0 auto;
     border-top: 1px solid #CBCBCB;
+    padding-top: 63px;
+    padding-bottom: 95px;
+    &--link {
+      display: block;
+      position: relative;
+      &:not(:last-child):before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 93px;
+        top: 0;
+        right: 0;
+        background: #CBCBCB;
+
+      }
+    }
   }
   &__info {
     display: none;
@@ -211,9 +232,13 @@
       border-radius: 60px;
       display: none;
     }
-    &--image{
+    &--image {
       display: block;
-      margin: -18px auto 0;
+      position: absolute;
+      top: -14%;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
     }
     &--open {
       display: block;
