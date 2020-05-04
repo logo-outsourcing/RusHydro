@@ -266,7 +266,9 @@ $(document).ready(function () {
             }, 100);
         }
     });
-    $('.button').click(function () {
+    $('.button').click(function (e) {
+        e.preventDefault;
+        e.target.classList.add('animate');
         setTimeout(function () {
             $('#question_12').addClass('interactive__item--hidden');
             $('#question_13').removeClass('interactive__item--hidden');
@@ -274,7 +276,7 @@ $(document).ready(function () {
                 $('.interactive__box').addClass('interactive__box--open');
             },500);
 
-        },900);
+        },1000);
     });
 
 
