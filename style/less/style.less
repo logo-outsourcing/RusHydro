@@ -461,7 +461,7 @@ body {
     &--close {
       position: absolute;
       top: 12%;
-      right: 12%;
+      right: 17%;
       z-index: 9999;
       display: block;
       & svg {
@@ -477,8 +477,7 @@ body {
     }
   }
   &__iframe {
-    width: 80%;
-    height: 80%;
+    width: 69%;
   }
   &__info {
     display: flex;
@@ -1150,6 +1149,11 @@ body {
 
 ///Media
 
+@media screen and (max-width: 1700px){
+  .header__film--close {
+    top: 21%;
+  }
+}
 @media screen and (max-width: 1400px) {
   .test__gif {
     right: -59px;
@@ -1162,6 +1166,9 @@ body {
   .preload video {
     width: 100%;
     height: 100vh;
+  }
+  .header__film--close {
+    top: 27%;
   }
 }
 
@@ -1224,6 +1231,9 @@ body {
     height: 110%;
 
   }
+  .header__film--close {
+    top: 30%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1237,7 +1247,6 @@ body {
 
   .header__iframe {
     width: 80%;
-    height: 34%;
   }
 
   .header__film--close {
@@ -1361,7 +1370,10 @@ body {
     font-size: 22px;
     padding: 0 5px;
   }
-
+  .header__film--close {
+    top: 40%;
+    right: 14%;
+  }
   .content-container {
     width: 95%;
   }
