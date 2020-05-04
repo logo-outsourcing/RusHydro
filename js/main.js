@@ -127,6 +127,7 @@ $(document).ready(function () {
     });
     $('.header__navigation--test').click(function () {
         $('.header__box').toggleClass('header__box--open');
+        $('.header__open').toggleClass('is-active');
         $('.header__open').removeClass('header__hidden');
         $('.header__close').removeClass('header__visible');
     });
