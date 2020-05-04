@@ -193,7 +193,7 @@
         height: 395px;
         left: -23px;
         top: 0;
-        background:#F08300;
+        background: #F08300;
       }
     }
     &--wrap {
@@ -218,13 +218,19 @@
       width: 40%;
       margin-left: 6%;
     }
-    &--block{
+    &--box {
+      margin-bottom: 47px;
+    }
+    &--block {
       display: block;
       margin-bottom: 25px;
-  }
+    }
+    &--inner {
+      width: 91%;
+    }
     &--wrap {
       position: absolute;
-      top: -313px;
+      top: -220px;
       right: 0;
       z-index: -1;
 
@@ -355,21 +361,16 @@
     }
   }
   &__line {
-    width: 90%;
-    margin: 0 auto 31px;
+
     &--wrap {
       width: 70%;
-      margin-bottom: 68px;
+      margin: 0 auto 68px;
       align-items: flex-start;
-    }
-    &--inner {
-      text-align: right;
-      margin-left: auto;
     }
   }
   &__windmills {
     position: relative;
-    width: 87%;
+    width: 100%;
     margin: 0 auto 118px;
     &--info {
       position: absolute;
@@ -377,8 +378,8 @@
       bottom: -39px;
       background: #F08300;
       box-sizing: border-box;
-      left: 22%;
-      width: 19%;
+      left: 19%;
+      width: 24%;
     }
   }
   &__river {
@@ -399,9 +400,9 @@
       background: #005C93;
       padding: 22px 46px 14px 33px;
       box-sizing: border-box;
-      left: -3%;
+      left: 0;
       top: 63%;
-      width: 31%;
+      width: 25%;
     }
   }
   &__text {
@@ -438,7 +439,7 @@
       right: -2%;
       bottom: 15%;
       width: 40%;
-      background: #005C93;
+      background: #F08300;
     }
   }
   &__element {
@@ -496,7 +497,7 @@
     }
     &--info {
       position: absolute;
-      background: #F08300;
+      background: #005C93;
       padding: 14px 16px 14px 37px;
       box-sizing: border-box;
       left: 4px;
@@ -516,6 +517,13 @@
       width: 345px;
       height: 15px;
       background: #005C93;
+    }
+    &--block {
+      text-align: right;
+      &:after {
+        right: 21%;
+        left: auto;
+      }
     }
     &--wrap {
       position: relative;
@@ -539,6 +547,16 @@
         background: #F08300;
       }
     }
+    &--wrapper {
+      &:before {
+        left: auto;
+        right: -6px;
+      }
+      &:after {
+        right: 13%;
+        left: auto;
+      }
+    }
     &--info {
       position: absolute;
       padding: 5px 36px;
@@ -546,7 +564,16 @@
       left: 100%;
       bottom: -25px;
       background: #F08300;
-      width: 57%;
+      width: 75%;
+    }
+    &--left {
+      left: auto;
+      right: 100%;
+      text-align: right;
+      padding: 24px;
+    }
+    &--inner {
+      padding: 24px;
     }
     &--box {
       width: 46%;
@@ -635,7 +662,7 @@
       padding: 14px;
       right: -4px;
       bottom: 15%;
-
+      text-align: right;
     }
     &--name {
       font-family: "Rodchenko", sans-serif;
@@ -701,10 +728,6 @@
   }
 }
 
-.contemporary .contemporary__line--data {
-  margin-left: 19px;
-}
-
 .contemporary .contemporary__paragraph {
   padding: 14px 23px 26px;
   box-sizing: border-box;
@@ -724,6 +747,10 @@
     left: auto;
     right: 0;
     bottom: 0;
+  }
+
+  .contemporary__windmills--info {
+    width: 26%;
   }
 
   .contemporary__starting--wrap:after {
@@ -834,7 +861,7 @@
   }
 
   .contemporary__panel--wrap {
-    top: -195px;
+    top: -30px;
     width: 50%;
   }
 
@@ -1021,7 +1048,7 @@
 
   .contemporary__panel--info {
     right: 0;
-    top: 34%;
+    top: 56%;
   }
 
   .contemporary__button--next {
@@ -1047,6 +1074,7 @@
   .contemporary .contemporary__line--wrap {
     width: 80%;
     margin-bottom: 68px;
+    margin-left: 0;
     flex-direction: column;
   }
 
@@ -1099,6 +1127,7 @@
 
   .contemporary .contemporary__starting {
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   .contemporary__starting--wrap {
@@ -1156,6 +1185,25 @@
   .contemporary__element:before {
     bottom: -48%;
   }
+
+  .contemporary .contemporary__panel--box {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .contemporary .contemporary__panel--inner {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .contemporary .contemporary__starting--block {
+    text-align: left;
+    flex-flow: column-reverse;
+  }
+
+  .contemporary__starting--left {
+    text-align: left;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1173,7 +1221,7 @@
   }
 
   .contemporary__starting--info {
-    padding: 0;
+    padding: 5px;
   }
 
   .contemporary__station--name {
@@ -1378,5 +1426,13 @@
 
   .contemporary .contemporary__robot--none {
     display: none;
+  }
+
+  .contemporary .contemporary__panel--box {
+    width: 97%;
+  }
+
+  .contemporary .contemporary__panel--inner {
+    width: 97%;
   }
 }
