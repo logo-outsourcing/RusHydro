@@ -82,7 +82,7 @@ $(document).ready(function () {
     }, 3000);
     $('.header__film--fragment').each(function () {
         setTimeout(function () {
-            document.querySelector(".header__film--fragment").setAttribute("src", "https://logo-outsourcing.github.io/Hydro/video/saver.mp4");
+            document.querySelector(".header__film--fragment").setAttribute("src", "http://rusgidro.intelgroup.ru/film-preview.mp4");
             $('body').removeClass('scroll');
         }, 2900);
 
@@ -93,17 +93,13 @@ $(document).ready(function () {
 
     $('.header__film').click(function () {
         $('.header__film--open').addClass('header__film--play');
-        var film = " <iframe class=\"header__iframe\"  src=\"https://www.youtube.com/embed/hEOD_4Cf1ao?controls=0\"\n" +
-            "                        frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n" +
-            "                        allowfullscreen></iframe>";
+        var film = " <video class='header__iframe'  controls playsinline preload='auto' poster='../img/home/video.jpg'  src='http://rusgidro.intelgroup.ru/film.mp4'> </video>";
         $('.header__film--wrap').html(film);
         $('body').addClass('scroll');
     });
     $('.header__film--mobile').click(function () {
         $('.header__film--small').addClass('header__film--play');
-        var film = " <iframe class=\"header__iframe\"  src=\"https://www.youtube.com/embed/hEOD_4Cf1ao?controls=0\"\n" +
-            "                        frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\"\n" +
-            "                        allowfullscreen></iframe>";
+        var film = " <video class='header__iframe'  controls playsinline preload='auto' poster='../img/home/video.jpg'  src='http://rusgidro.intelgroup.ru/film.mp4'> </video>";
         $('.header__film--wrap').html(film);
     });
     $('.header__film--close').on("click", function (e) {
