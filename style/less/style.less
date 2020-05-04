@@ -279,6 +279,8 @@ body {
       background: #FFFFFF;
       left: 0;
       z-index: 99;
+      overflow-y: auto;
+      height: calc(100vh - 38px);
     }
   }
   &__close {
@@ -1560,6 +1562,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+  .hidden{
+    overflow-y: hidden;
+  }
   .content-container {
     width: 100%;
   }

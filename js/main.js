@@ -149,6 +149,7 @@ $(document).ready(function () {
         e.preventDefault();
         $('.header__box').toggleClass('header__box--open');
         $('.header__open').toggleClass('is-active');
+        $('body').toggleClass('hidden');
     });
 
 //Close burger menu
